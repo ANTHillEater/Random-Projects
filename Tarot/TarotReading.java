@@ -3,6 +3,7 @@ package Tarot;
 import java.util.*;
 
 //TODO make sure that the same card cant be drawn twice
+//TODO add descriptions
 
 public class TarotReading {
 	public static void main (String [] args){
