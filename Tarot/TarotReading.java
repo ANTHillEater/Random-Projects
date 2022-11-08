@@ -3,7 +3,9 @@ package Tarot;
 import java.util.*;
 
 //TODO make sure that the same card cant be drawn twice
+
 //TODO add descriptions
+
 //TODO turn majOrMin into a seperate file and organize a little bit
 
 public class TarotReading {
