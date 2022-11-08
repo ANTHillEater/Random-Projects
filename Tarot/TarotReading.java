@@ -4,6 +4,7 @@ import java.util.*;
 
 //TODO make sure that the same card cant be drawn twice
 //TODO add descriptions
+//TODO turn majOrMin into a seperate file and organize a little bit
 
 public class TarotReading {
 	public static void main (String [] args){
@@ -49,7 +50,6 @@ public class TarotReading {
 				System.out.println(s);
 				break;
 			case 2:
-
 				for(int i = 0; i < 4; i++){
 					majOrMin = Math.random();
 					if(majOrMin > 0.5){
