@@ -2,6 +2,8 @@ package Tarot;
 
 import java.util.*;
 
+//TODO make sure that the same card cant be drawn twice
+
 public class TarotReading {
 	public static void main (String [] args){
 		String [] major = {"0, The Fool", "I, The Magician", "II, The High Preistess", "III, The Empress",
