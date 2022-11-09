@@ -6,9 +6,10 @@ import java.util.*;
 
 //TODO add descriptions
 
-//TODO turn majOrMin into a seperate file and organize a little bit
-
 public class TarotReading {
+	public static String arcana(){	//TODO turn majOrMin into a seperate file and organize a little bit
+		return ;
+	}
 	public static void main (String [] args){
 		String [] major = {"0, The Fool", "I, The Magician", "II, The High Preistess", "III, The Empress",
 					"IV, The Emperor", "V, The Heiophant", "VI, The Lovers", "VII, The Chariot", "VIII, Justice",
