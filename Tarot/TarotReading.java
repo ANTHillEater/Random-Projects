@@ -19,7 +19,7 @@ public class TarotReading {
 					{"The Querent: ", "The Challenge: ", "The Concious: ", "The Subconcious: ", "The Past: ", "The Future: ",
 					"Your Attitude: ", "Your Environment: ", "Your Hopes & Fears: ", "The Expected Outcome: "}};
 
-	public static String arcana(){
+	public static String arcana(int input, int i){
 		String s = "";
 		int draw = 0;
 		double invert = 0.0;
@@ -54,18 +54,18 @@ public class TarotReading {
 
 		switch(input.nextInt()){
 			case 1:
-				s = arcana();
+				s = arcana(input.nextInt(), );
 				System.out.println(s);
 				break;
 			case 2:
 				for(int i = 0; i < 4; i++){
-					s = arcana();
+					s = arcana(input.nextInt(), );
 					System.out.println(s);
 				}
 				break;
 			case 3:
 				for(int i = 0; i < 10; i++){
-					s = arcana();
+					s = arcana(input.nextInt(), );
 					System.out.println(s);
 				}
 				break;
