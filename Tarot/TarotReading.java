@@ -28,11 +28,11 @@ public class TarotReading {
 		majOrMin = Math.random();
 		if(majOrMin > 0.5){
 			draw = (int)(Math.random() * 22);
-			s = spreads[0][0] + major[draw];
+			s = spreads[input - 1][i] + major[draw];
 		}
 		else{
 			draw = (int)(Math.random() * 10);
-			s = spreads[0][0] + minorNames[draw];
+			s = spreads[input - 1][i] + minorNames[draw];
 			draw = (int)(Math.random() * 4);
 			s += minorFaces[draw];
 		}
@@ -45,7 +45,6 @@ public class TarotReading {
 	}
 	public static void main (String [] args){
 		Scanner input = new Scanner(System.in);
-		String s = "";
 
 		System.out.println("Choose a spread:");
 		System.out.println("1. Single card");
@@ -54,19 +53,16 @@ public class TarotReading {
 
 		switch(input.nextInt()){
 			case 1:
-				s = arcana(input.nextInt(), );
-				System.out.println(s);
+				System.out.println(arcana(input.nextInt(), 1));
 				break;
 			case 2:
 				for(int i = 0; i < 4; i++){
-					s = arcana(input.nextInt(), );
-					System.out.println(s);
+					System.out.println(arcana(input.nextInt(), 1));
 				}
 				break;
 			case 3:
 				for(int i = 0; i < 10; i++){
-					s = arcana(input.nextInt(), );
-					System.out.println(s);
+					System.out.println(arcana(input.nextInt(), 1));
 				}
 				break;
 			default:
@@ -75,5 +71,6 @@ public class TarotReading {
 		}
 
 		input.close();
+		return;
 	}
 }
